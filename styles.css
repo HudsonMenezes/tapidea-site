@@ -933,3 +933,16 @@ h3 {
     height: 72px;
   }
 }
+
+/* Chamada para a inscrição no fim de uma seção */
+.section-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  margin-top: 32px;
+}
+
+.section-cta .fine {
+  margin: 0;
+}
