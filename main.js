@@ -15,10 +15,9 @@ const BAYER = [
   [15, 7, 13, 5],
 ];
 
-function startOrb(canvas) {
+function startOrb(canvas, cells = 42) {
   const ctx = canvas.getContext('2d');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const cells = 42;
   let visible = true;
   let frame = 0;
 
@@ -151,5 +150,7 @@ function startWaitlist(form) {
 
 const orb = document.getElementById('orb');
 if (orb) startOrb(orb);
+const orbMini = document.getElementById('orb-mini');
+if (orbMini) startOrb(orbMini, 18);
 const waitlist = document.getElementById('waitlist');
 if (waitlist) startWaitlist(waitlist);
