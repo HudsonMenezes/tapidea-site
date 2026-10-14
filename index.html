@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TapIdea — Fale bagunçado. Leia organizado. | Notas de voz com IA para iPhone</title>
+<meta name="description" content="Grave uma ideia em um toque. O TapIdea transcreve sua fala e organiza em notas com título, resumo, tarefas, pastas e tags. App para iPhone, em português. Beta fechado e gratuito.">
+<link rel="canonical" href="https://tapidea.vercel.app/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0C0D10">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="TapIdea">
+<meta property="og:url" content="https://tapidea.vercel.app/">
+<meta property="og:title" content="TapIdea — Fale bagunçado. Leia organizado.">
+<meta property="og:description" content="Grave uma ideia em um toque. A IA transforma sua fala em notas organizadas, com tarefas, pastas e tags. Para iPhone.">
+<meta property="og:image" content="https://tapidea.vercel.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TapIdea: notas de voz organizadas por IA no iPhone">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TapIdea — Fale bagunçado. Leia organizado.">
+<meta name="twitter:description" content="Grave uma ideia em um toque. A IA transforma sua fala em notas organizadas. Para iPhone.">
+<meta name="twitter:image" content="https://tapidea.vercel.app/og.png">
+
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="Resumo do TapIdea para IAs">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script src="/main.js" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://tapidea.vercel.app/#website",
+      "url": "https://tapidea.vercel.app/",
+      "name": "TapIdea",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://tapidea.vercel.app/#app",
+      "name": "TapIdea",
+      "url": "https://tapidea.vercel.app/",
+      "operatingSystem": "iOS",
+      "applicationCategory": "ProductivityApplication",
+      "inLanguage": "pt-BR",
+      "image": "https://tapidea.vercel.app/assets/icon-512.png",
+      "description": "App de notas de voz para iPhone. Você grava uma ideia em um toque e a IA transcreve e organiza em uma nota com título, resumo, tarefas, ideias, perguntas, pasta e tags. As notas ficam guardadas no próprio aparelho.",
+      "featureList": [
+        "Gravação em um toque, até 5 minutos, com a tela sempre acesa",
+        "Transcrição e organização automáticas por IA",
+        "Tarefas, ideias e perguntas separadas em cada nota",
+        "Pasta e tags escolhidas pela IA",
+        "Busca por título, ideias, tags e pela própria fala",
+        "Complementar uma nota por voz",
+        "Gravação sem internet; a nota se organiza quando a conexão voltar",
+        "Sem conta e sem senha; notas guardadas no iPhone",
+        "Tema claro e escuro"
+      ],
+      "screenshot": [
+        "https://tapidea.vercel.app/assets/screens/02.webp",
+        "https://tapidea.vercel.app/assets/screens/03.webp",
+        "https://tapidea.vercel.app/assets/screens/04.webp",
+        "https://tapidea.vercel.app/assets/screens/05.webp"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL",
+        "description": "Gratuito durante o beta fechado."
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tapidea.vercel.app/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é o TapIdea?",
+          "acceptedAnswer": { "@type": "Answer", "text": "É um app de notas de voz para iPhone. Você toca, fala sua ideia do jeito que vier, e a IA transcreve e organiza em uma nota com título, resumo, tarefas, ideias, perguntas, pasta e tags." }
+        },
+        {
+          "@type": "Question",
+          "name": "O TapIdea é gratuito?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sim, durante o beta fechado. Depois do beta haverá uma assinatura, e quem participar do beta será avisado antes de qualquer cobrança." }
+        },
+        {
+          "@type": "Question",
+          "name": "Funciona no Android?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Não. O TapIdea é feito só para iPhone." }
+        },
+        {
+          "@type": "Question",
+          "name": "Precisa de internet?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Para gravar, não. A transcrição e a organização usam a internet: a gravação fica na fila e vira nota assim que a conexão voltar." }
+        },
+        {
+          "@type": "Question",
+          "name": "Minhas notas vão para a nuvem?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Não. As notas ficam guardadas no seu iPhone. Para transcrever e organizar, o áudio é enviado a um serviço de IA, que pode mantê-lo por até 30 dias para prevenir abuso; o TapIdea não guarda seu áudio em servidor." }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso criar uma conta?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Não. Você abre o app e já pode gravar, sem cadastro e sem senha." }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo posso gravar?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Até 5 minutos por gravação. Depois, dá para complementar a mesma nota por voz." }
+        },
+        {
+          "@type": "Question",
+          "name": "Em quais idiomas funciona?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Por enquanto, em português. Inglês e espanhol estão nos planos." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="top">
+  <div class="wrap top-row">
+    <a class="wordmark" href="/" aria-label="TapIdea, início">tapidea<span class="dot" aria-hidden="true"></span></a>
+    <nav aria-label="Principal" class="nav">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#privacidade">Privacidade</a>
+      <a href="#perguntas">Perguntas</a>
+      <a class="btn btn-small" href="#lista">Entrar no beta</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live" aria-hidden="true"></span>Beta fechado · iPhone · grátis</p>
+        <h1 id="hero-title">Fale bagunçado.<br><span class="accent">Leia organizado.</span></h1>
+        <p class="lead">Grave uma ideia em um toque. O TapIdea transcreve sua fala e entrega uma nota pronta, com título, resumo, tarefas, pasta e tags. Sem digitar nada.</p>
+        <div class="cta-row">
+          <a class="btn" href="#lista">Quero testar no beta</a>
+          <a class="btn btn-ghost" href="#como-funciona">Ver como funciona</a>
+        </div>
+        <p class="fine">Só para iPhone · Em português · Sem conta</p>
+      </div>
+      <div class="hero-orb">
+        <canvas id="orb" width="420" height="420" role="img" aria-label="O Orb do TapIdea: uma esfera pontilhada em âmbar que reage à voz"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="section" aria-labelledby="como-title">
+    <div class="wrap">
+      <p class="label">Como funciona</p>
+      <h2 id="como-title">Da fala à nota em segundos.</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-n">01</span>
+          <h3>Toque e fale</h3>
+          <p>Um toque e já está gravando. Até 5 minutos, com a tela acesa, mesmo sem internet.</p>
+        </li>
+        <li>
+          <span class="step-n">02</span>
+          <h3>A IA organiza</h3>
+          <p>Sua fala vira uma nota com título, resumo, tarefas, ideias e perguntas, na pasta certa.</p>
+        </li>
+        <li>
+          <span class="step-n">03</span>
+          <h3>Encontre depois</h3>
+          <p>Busque por qualquer palavra que você falou. Lembrou de algo? Complemente a nota por voz.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section gallery-section" aria-labelledby="telas-title">
+    <div class="wrap">
+      <p class="label">O app</p>
+      <h2 id="telas-title">Feito para capturar rápido e achar fácil.</h2>
+    </div>
+    <div class="gallery" tabindex="0" aria-label="Telas do TapIdea, role para o lado">
+      <figure>
+        <img src="/assets/screens/02.webp" width="660" height="1434" loading="lazy" decoding="async" alt="Tela de gravação: um toque e já está gravando, até 5 minutos, grava sem internet.">
+      </figure>
+      <figure>
+        <img src="/assets/screens/03.webp" width="660" height="1434" loading="lazy" decoding="async" alt="Nota pronta com resumo e itens separados em tarefa, ideia e pergunta.">
+      </figure>
+      <figure>
+        <img src="/assets/screens/04.webp" width="660" height="1434" loading="lazy" decoding="async" alt="Notas filtradas pela pasta Trabalho; a IA escolhe a pasta e as tags de cada nota.">
+      </figure>
+      <figure>
+        <img src="/assets/screens/05.webp" width="660" height="1434" loading="lazy" decoding="async" alt="Busca pela palavra orçamento, com o termo destacado nos resultados.">
+      </figure>
+    </div>
+  </section>
+
+  <section id="privacidade" class="section" aria-labelledby="priv-title">
+    <div class="wrap">
+      <p class="label">Privacidade</p>
+      <h2 id="priv-title">Suas notas, só no seu iPhone.</h2>
+      <ul class="cards">
+        <li class="card">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          <h3>Notas guardadas no aparelho</h3>
+          <p>Suas notas não ficam na nuvem.</p>
+        </li>
+        <li class="card">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 12.5-6.6"/><path d="M17 16l5 5M22 16l-5 5"/></svg>
+          <h3>Sem conta, sem senha</h3>
+          <p>Abra e grave. Nada de cadastro.</p>
+        </li>
+        <li class="card">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M2 8.5a15 15 0 0 1 20 0"/><path d="M5.5 12a10 10 0 0 1 13 0"/><path d="M9 15.5a5 5 0 0 1 6 0"/><path d="M3 3l18 18"/></svg>
+          <h3>Grava sem internet</h3>
+          <p>A nota se organiza quando a conexão voltar.</p>
+        </li>
+        <li class="card">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3>A IA analisa, o TapIdea não guarda</h3>
+          <p>Seu áudio não fica em nenhum servidor do TapIdea.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="perguntas" class="section" aria-labelledby="faq-title">
+    <div class="wrap narrow">
+      <p class="label">Perguntas</p>
+      <h2 id="faq-title">Perguntas frequentes</h2>
+      <div class="faq">
+        <details>
+          <summary>O que é o TapIdea?</summary>
+          <p>É um app de notas de voz para iPhone. Você toca, fala sua ideia do jeito que vier, e a IA transcreve e organiza em uma nota com título, resumo, tarefas, ideias, perguntas, pasta e tags.</p>
+        </details>
+        <details>
+          <summary>O TapIdea é gratuito?</summary>
+          <p>Sim, durante o beta fechado. Depois do beta haverá uma assinatura, e quem participar do beta será avisado antes de qualquer cobrança.</p>
+        </details>
+        <details>
+          <summary>Funciona no Android?</summary>
+          <p>Não. O TapIdea é feito só para iPhone.</p>
+        </details>
+        <details>
+          <summary>Precisa de internet?</summary>
+          <p>Para gravar, não. A transcrição e a organização usam a internet: a gravação fica na fila e vira nota assim que a conexão voltar.</p>
+        </details>
+        <details>
+          <summary>Minhas notas vão para a nuvem?</summary>
+          <p>Não. As notas ficam guardadas no seu iPhone. Para transcrever e organizar, o áudio é enviado a um serviço de IA, que pode mantê-lo por até 30 dias para prevenir abuso; o TapIdea não guarda seu áudio em servidor. Detalhes na <a href="https://hudsonmenezes.notion.site/Pol-tica-de-Privacidade-do-TapIdea-3efa1ca7badf808b9ceef6d560281f1a" rel="noopener">política de privacidade</a>.</p>
+        </details>
+        <details>
+          <summary>Preciso criar uma conta?</summary>
+          <p>Não. Você abre o app e já pode gravar, sem cadastro e sem senha.</p>
+        </details>
+        <details>
+          <summary>Quanto tempo posso gravar?</summary>
+          <p>Até 5 minutos por gravação. Depois, dá para complementar a mesma nota por voz.</p>
+        </details>
+        <details>
+          <summary>Em quais idiomas funciona?</summary>
+          <p>Por enquanto, em português. Inglês e espanhol estão nos planos.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="lista" class="section join" aria-labelledby="lista-title">
+    <div class="wrap narrow">
+      <p class="label">Beta fechado</p>
+      <h2 id="lista-title">Entre na lista do beta.</h2>
+      <p class="lead">As vagas são limitadas. Mandamos o convite do TestFlight para o seu e-mail, em ordem de inscrição.</p>
+
+      <form id="waitlist" class="form" novalidate>
+        <div class="field">
+          <label for="f-nome">Nome <span class="opt">(opcional)</span></label>
+          <input id="f-nome" name="nome" type="text" autocomplete="given-name" maxlength="80">
+        </div>
+        <div class="field">
+          <label for="f-email">E-mail</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" aria-describedby="f-email-hint">
+          <p id="f-email-hint" class="hint">O convite chega por aqui. Abra no iPhone para instalar pelo TestFlight.</p>
+        </div>
+        <div class="field">
+          <label for="f-uso">Para que você usaria? <span class="opt">(opcional)</span></label>
+          <select id="f-uso" name="uso">
+            <option value="">Escolha uma opção</option>
+            <option>Trabalho</option>
+            <option>Estudos</option>
+            <option>Ideias e projetos pessoais</option>
+            <option>Casa e rotina</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="field trap" aria-hidden="true">
+          <label for="f-empresa">Empresa</label>
+          <input id="f-empresa" name="empresa" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="check">
+          <input id="f-ok" name="consentimento" type="checkbox" required>
+          <label for="f-ok">Concordo em receber por e-mail o convite do beta e novidades do TapIdea.</label>
+        </div>
+        <button class="btn btn-full" type="submit">Quero entrar no beta</button>
+        <p id="form-status" class="status" role="status" aria-live="polite"></p>
+        <p class="fine">Usamos seu e-mail só para o beta e para novidades do TapIdea. Para sair da lista, é só responder qualquer e-mail nosso.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <a class="wordmark small" href="/" aria-label="TapIdea, início">tapidea<span class="dot" aria-hidden="true"></span></a>
+    <nav aria-label="Rodapé" class="foot-nav">
+      <a href="https://hudsonmenezes.notion.site/Pol-tica-de-Privacidade-do-TapIdea-3efa1ca7badf808b9ceef6d560281f1a" rel="noopener">Política de privacidade</a>
+      <a href="#perguntas">Perguntas frequentes</a>
+    </nav>
+    <p class="fine">© 2026 TapIdea. iPhone é marca da Apple Inc.</p>
+  </div>
+</footer>
+</body>
+</html>

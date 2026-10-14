@@ -1,0 +1,34 @@
+# TapIdea
+
+> TapIdea é um app de notas de voz para iPhone, em português. A pessoa toca uma vez, fala uma ideia do jeito que vier, e a IA transcreve e organiza a fala em uma nota pronta: título, resumo, tarefas, ideias, perguntas, pasta e tags. As notas ficam guardadas no próprio iPhone. Está em beta fechado e gratuito; depois do beta haverá uma assinatura.
+
+Slogan: "Fale bagunçado. Leia organizado."
+
+## O que o app faz
+
+- Gravação em um toque, de até 5 minutos, com a tela sempre acesa durante a gravação.
+- Grava sem internet: a gravação fica na fila e vira nota assim que a conexão voltar.
+- Transcrição e organização automáticas por IA: cada nota recebe título, resumo e itens separados em tarefas (com caixa para marcar como feita), ideias e perguntas.
+- A IA escolhe a pasta e as tags de cada nota. A pessoa pode editar tudo depois.
+- Busca por título, ideias, tags e pelo texto da própria fala.
+- "Complementar por voz": acrescentar uma nova gravação a uma nota existente.
+- Tema claro, escuro ou automático.
+
+## Privacidade
+
+- Sem conta, sem senha e sem cadastro.
+- As notas ficam guardadas no iPhone, não na nuvem.
+- Para transcrever e organizar, o áudio é enviado a um serviço de IA, que pode mantê-lo por até 30 dias para prevenir abuso. O TapIdea não guarda o áudio em servidor.
+- Dados de uso anônimos, sem conteúdo das notas, podem ser desligados nas Configurações.
+
+## Fatos rápidos
+
+- Plataforma: somente iPhone (iOS). Não existe versão para Android.
+- Idioma: português do Brasil. Inglês e espanhol estão nos planos.
+- Preço: gratuito durante o beta fechado (TestFlight). Assinatura prevista depois do beta.
+- Público: quem tem ideias o tempo todo e quer registrar rápido, sem digitar — trabalho, estudos, projetos pessoais, casa e rotina.
+
+## Links
+
+- [Página do TapIdea](https://tapidea.vercel.app/): apresentação, perguntas frequentes e inscrição no beta.
+- [Política de privacidade](https://hudsonmenezes.notion.site/Pol-tica-de-Privacidade-do-TapIdea-3efa1ca7badf808b9ceef6d560281f1a): o que é enviado, para quem e por quanto tempo.
