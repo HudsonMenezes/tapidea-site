@@ -17,4 +17,4 @@ User-agent: Applebot-Extended
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://tapidea.vercel.app/sitemap.xml
+Sitemap: https://tapidea-lista.vercel.app/sitemap.xml

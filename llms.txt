@@ -30,5 +30,5 @@ Slogan: "Fale bagunçado. Leia organizado."
 
 ## Links
 
-- [Página do TapIdea](https://tapidea.vercel.app/): apresentação, perguntas frequentes e inscrição no beta.
+- [Página do TapIdea](https://tapidea-lista.vercel.app/): apresentação, perguntas frequentes e inscrição no beta.
 - [Política de privacidade](https://hudsonmenezes.notion.site/Pol-tica-de-Privacidade-do-TapIdea-3efa1ca7badf808b9ceef6d560281f1a): o que é enviado, para quem e por quanto tempo.

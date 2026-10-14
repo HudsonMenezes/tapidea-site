@@ -29,10 +29,10 @@ Abra o endereço que aparecer (normalmente http://localhost:3000).
 
 1. Na Vercel: **Add New → Project**, importe o repositório `tapidea-site`.
 2. Framework: **Other**. Sem comando de build e sem pasta de saída (deixe em branco).
-3. Nome do projeto: `tapidea`. Assim o endereço fica `tapidea.vercel.app`, se estiver livre.
+3. Nome do projeto: `tapidea-lista`. O endereço é `tapidea-lista.vercel.app`.
 4. Depois disso, cada push no `main` publica sozinho.
 
-Se o endereço final não for `tapidea.vercel.app`, troque-o em `index.html` (canonical, og:url, og:image, JSON-LD), `robots.txt`, `sitemap.xml` e `llms.txt`.
+Ao mudar o endereço (por exemplo, para `tapidea.app`), troque-o em `index.html` (canonical, og:url, og:image, JSON-LD), `robots.txt`, `sitemap.xml` e `llms.txt`.
 
 ## Lista do beta (planilha do Google)
 
