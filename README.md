@@ -8,12 +8,12 @@ Landing page do TapIdea, app de notas de voz para iPhone. HTML, CSS e JavaScript
 |---|---|
 | `index.html` | A página, com as metatags, os dados estruturados (schema.org) e as perguntas frequentes |
 | `styles.css` | Estilos, com os mesmos tokens de cor e fonte do app |
-| `main.js` | Animação do Orb e envio do formulário da lista do beta |
+| `main.js` | Animação do Orb |
 | `llms.txt` | Resumo do app para assistentes de IA ([llmstxt.org](https://llmstxt.org)) |
 | `robots.txt`, `sitemap.xml` | Para buscadores e robôs de IA |
 | `vercel.json` | Cabeçalhos de segurança e cache |
 | `assets/screens/` | Telas do app (WebP, 660 × 1434) |
-| `google-apps-script/lista-do-beta.gs` | Script que grava a lista do beta numa planilha do Google |
+| `google-apps-script/lista-do-beta.gs` | Script que gravava a lista do beta (formulário removido no lançamento na App Store) |
 
 ## Ver no computador
 
@@ -35,6 +35,8 @@ Abra o endereço que aparecer (normalmente http://localhost:3000).
 Ao mudar o endereço (por exemplo, para `tapidea.app`), troque-o em `index.html` (canonical, og:url, og:image, JSON-LD), `robots.txt`, `sitemap.xml` e `llms.txt`.
 
 ## Lista do beta (planilha do Google)
+
+> Encerrada no lançamento na App Store: o formulário saiu da página e os botões levam à loja. As instruções abaixo ficam como registro.
 
 O formulário grava cada inscrição numa planilha do Google (abre no Excel e pode ser baixada em `.xlsx`).
 

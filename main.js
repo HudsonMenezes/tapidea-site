@@ -1,9 +1,4 @@
-// TapIdea — Orb do hero e formulário da lista do beta.
-
-// Endereço do Google Apps Script que grava na planilha (ver README.md, "Lista do beta").
-// Vazio: o formulário avisa que ainda não está configurado.
-const WAITLIST_URL =
-  'https://script.google.com/macros/s/AKfycbyEIEKa6cyIAmTroVXpdFVQrcmoNuRnKOvxRHMTfzWtXgOM44YNEFbGZvCIP25eU9ly2g/exec';
+// TapIdea — Orb do hero.
 
 // ---------------------------------------------------------------------------
 // Orb: a mesma esfera pontilhada (dither Bayer 4x4) do app, com a luz girando devagar.
@@ -87,70 +82,7 @@ function startOrb(canvas, cells = 42) {
   restart();
 }
 
-// ---------------------------------------------------------------------------
-// Lista do beta.
-
-const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-
-function startWaitlist(form) {
-  const status = form.querySelector('#form-status');
-  const email = form.querySelector('#f-email');
-  const consent = form.querySelector('#f-ok');
-  const button = form.querySelector('button[type="submit"]');
-
-  function say(text, kind) {
-    status.textContent = text;
-    status.className = `status ${kind}`;
-  }
-
-  form.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    const value = email.value.trim();
-
-    if (!EMAIL.test(value)) {
-      email.setAttribute('aria-invalid', 'true');
-      email.focus();
-      say('Confira o e-mail: parece que falta alguma coisa.', 'error');
-      return;
-    }
-    email.removeAttribute('aria-invalid');
-    if (!consent.checked) {
-      consent.focus();
-      say('Marque a caixa para podermos mandar o convite.', 'error');
-      return;
-    }
-    if (!WAITLIST_URL) {
-      say('A lista ainda não está aberta. Volte em breve!', 'error');
-      return;
-    }
-
-    const params = new URLSearchParams(window.location.search);
-    const data = new URLSearchParams({
-      nome: form.nome.value.trim(),
-      email: value,
-      uso: form.uso.value,
-      empresa: form.empresa.value,
-      origem: params.get('utm_source') || document.referrer || 'direto',
-    });
-
-    button.disabled = true;
-    say('Enviando…', '');
-    try {
-      // O Apps Script não devolve CORS legível: "no-cors" envia e não lê a resposta.
-      await fetch(WAITLIST_URL, { method: 'POST', mode: 'no-cors', body: data });
-      form.reset();
-      say('Pronto! Você está na lista. O convite chega por e-mail.', 'ok');
-    } catch {
-      say('Não deu para enviar agora. Confira a internet e tente de novo.', 'error');
-    } finally {
-      button.disabled = false;
-    }
-  });
-}
-
 const orb = document.getElementById('orb');
 if (orb) startOrb(orb);
 const orbMini = document.getElementById('orb-mini');
 if (orbMini) startOrb(orbMini, 18);
-const waitlist = document.getElementById('waitlist');
-if (waitlist) startWaitlist(waitlist);

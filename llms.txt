@@ -1,6 +1,6 @@
 # TapIdea
 
-> TapIdea é um app de notas de voz para iPhone, em português. A pessoa toca uma vez, fala uma ideia do jeito que vier, e a IA transcreve e organiza a fala em uma nota pronta: título, resumo, tarefas, ideias, perguntas, pasta e tags. As notas ficam guardadas no próprio iPhone. Está em beta fechado e gratuito; depois do beta haverá uma assinatura.
+> TapIdea é um app de notas de voz para iPhone, em português. A pessoa toca uma vez, fala uma ideia do jeito que vier, e a IA transcreve e organiza a fala em uma nota pronta: título, resumo, tarefas, ideias, perguntas, pasta e tags. As notas ficam guardadas no próprio iPhone. Disponível grátis na App Store.
 
 Slogan: "Fale bagunçado. Leia organizado."
 
@@ -25,11 +25,12 @@ Slogan: "Fale bagunçado. Leia organizado."
 
 - Plataforma: somente iPhone (iOS). Não existe versão para Android.
 - Idioma: português do Brasil. Inglês e espanhol estão nos planos.
-- Preço: gratuito durante o beta fechado (TestFlight). Assinatura prevista depois do beta.
+- Preço: download gratuito na App Store.
 - Público: quem tem ideias o tempo todo e quer registrar rápido, sem digitar — trabalho, estudos, projetos pessoais, casa e rotina.
 
 ## Links
 
-- [Página do TapIdea](https://tapidea-lista.vercel.app/): apresentação, perguntas frequentes e inscrição no beta.
+- [Página do TapIdea](https://tapidea-lista.vercel.app/): apresentação e perguntas frequentes.
+- [TapIdea na App Store](https://apps.apple.com/br/app/tapidea/id6822850668): download para iPhone.
 - Suporte: hudson.bm23@gmail.com
 - [Política de privacidade](https://tapidea-lista.vercel.app/privacidade): o que é enviado, para quem e por quanto tempo.
