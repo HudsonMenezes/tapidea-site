@@ -40,7 +40,7 @@
   <article class="wrap narrow prose">
     <p class="label">Privacidade</p>
     <h1>Política de Privacidade do TapIdea</h1>
-<p><strong>Última atualização:</strong> 5 de novembro de 2026</p>
+<p><strong>Última atualização:</strong> 13 de novembro de 2026</p>
 <p>O TapIdea transforma gravações de voz em notas organizadas. Esta política explica quais dados o app usa, para onde eles vão, por quanto tempo ficam guardados e como você controla tudo isso. Ela segue a Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018).</p>
 <h2>1. Quem é o responsável</h2>
 <p>O TapIdea é desenvolvido por <strong>Hudson Menezes</strong>, controlador dos dados tratados pelo app. Para qualquer assunto de privacidade, escreva para <strong><a href="mailto:hudson.bm23@gmail.com">hudson.bm23@gmail.com</a></strong>.</p>
@@ -71,12 +71,12 @@
 <li>depois, a <strong>transcrição</strong> e os <strong>nomes e descrições das suas pastas</strong>, para a IA montar a nota e escolher a pasta certa;</li>
 <li>quando você <strong>complementa uma nota por voz</strong>, a transcrição nova e o <strong>conteúdo atual da nota</strong> (título, resumo, ideias e tags), para a IA juntar os dois.</li>
 </ul>
-<p>O app mostra esse envio e o nome da OpenAI na última etapa do onboarding e pede sua permissão ("Concordo e começar") antes de qualquer gravação ser enviada. O mesmo aviso fica em Configurações → Seus dados.</p>
+<p>O app mostra esse envio e o nome da OpenAI na última etapa do onboarding. Antes do primeiro envio, no primeiro toque em gravar, uma tela própria ("Enviar suas gravações para a OpenAI?") lista esses dados, diz para quem vão e para quê, e pede sua permissão, com as opções "Permitir" e "Não permitir". <strong>Nada é enviado à OpenAI nem ao servidor do TapIdea sem essa permissão.</strong> Se você não permitir, pode gravar normalmente: o áudio fica só no seu celular e a nota espera, sem ser organizada, até você permitir pela própria nota. O mesmo aviso fica em Configurações → Seus dados.</p>
 <p>O servidor repassa esse conteúdo à <strong>OpenAI</strong> (OpenAI, L.L.C., Estados Unidos) e devolve o resultado ao app. O conteúdo passa pelo servidor só durante o processamento: nada é gravado em disco ou banco de dados, e os registros técnicos guardam apenas números (tamanho do áudio, duração, quantidade de caracteres e de tokens), nunca o áudio, o texto ou os nomes das pastas.</p>
 <p>Pela política da OpenAI para a sua API, o conteúdo enviado <strong>não é usado para treinar modelos</strong> e pode ficar guardado por <strong>até 30 dias</strong> em registros de monitoramento de abuso, sendo apagado depois, salvo quando a lei exigir guardar por mais tempo. Detalhes: <a rel="noopener" href="https://openai.com/policies/privacy-policy">https://openai.com/policies/privacy-policy</a>.</p>
 <p>Evite gravar informações sensíveis, como dados de saúde, senhas ou documentos, se não quiser que elas passem por esse processamento.</p>
 <h3>4.2 Identificador anônimo e limite de uso</h3>
-<p>Para proteger o serviço contra abuso, o app cria, depois que você aceita o onboarding, um <strong>identificador anônimo e aleatório</strong> (via Supabase, nosso provedor de servidor). Ele não contém seu nome, e-mail, telefone nem qualquer dado pessoal seu. Com ele, o servidor mantém só um <strong>contador diário de uso</strong> (data, tipo de chamada e quantidade: transcrições e notas organizadas), usado para aplicar o limite de uso diário. Os contadores com mais de 30 dias são apagados automaticamente.</p>
+<p>Para proteger o serviço contra abuso, o app cria, depois que você aceita o onboarding e permite o envio à OpenAI, um <strong>identificador anônimo e aleatório</strong> (via Supabase, nosso provedor de servidor). Ele não contém seu nome, e-mail, telefone nem qualquer dado pessoal seu. Com ele, o servidor mantém só um <strong>contador diário de uso</strong> (data, tipo de chamada e quantidade: transcrições e notas organizadas), usado para aplicar o limite de uso diário. Os contadores com mais de 30 dias são apagados automaticamente.</p>
 <h3>4.3 Registros técnicos de acesso</h3>
 <p>Como qualquer serviço na internet, os provedores de infraestrutura (Supabase e OpenAI) registram dados técnicos das conexões, como endereço IP, data e hora, por período limitado, para segurança e funcionamento do serviço.</p>
 <h3>4.4 Dados de uso anônimos</h3>
@@ -107,7 +107,7 @@
 <tbody><tr>
 <td>Áudio, transcrição, pastas, tags e conteúdo da nota complementada, enviados à OpenAI</td>
 <td>Transcrever a gravação e organizar a nota</td>
-<td>Consentimento (art. 7º, I), dado no onboarding</td>
+<td>Consentimento (art. 7º, I), dado na tela de permissão da OpenAI, no primeiro toque em gravar</td>
 </tr>
 <tr>
 <td>Identificador anônimo e contador diário</td>
